@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+nav{
+    border-bottom: 2px solid #2D3079;
+   background-color: #e0e9f6;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+nav button
+{   
+    color: #2D3079;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    margin: 20px;
+    border: 0;
+    background-color: transparent;
+}
+
+.loginbtn{
+    margin-right: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: transparent;
+    outline: 1px solid #2D3079;
+    border: #2D3079;
+    border-radius: 7px;
+}
+
+.registerbtn{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    background-color: #2D3079;
+    color: white;
+    border: #2D3079;
+    border-radius: 7px;
+    margin-right: 50px;
+}
+
+.mainframe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.schememain{
+    background-color: #2D3079;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: medium;
+    padding : 50px;
+    padding-left:100px;
+    height: 172px;
+}
+
+.backmain{
+    margin-right: 0px;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: large;
+    outline: 1px solid #2D3079;
+    border: #2D3079;
+    border-radius: 7px;
+}
+
+.navlogo{
+    float: left;
+}
+
+.centerdiv{
+    display: flex;
+    justify-content: content;
+    align-items: center;
+}
+
+.formarea{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e9f6;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.formplaincard{
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
+    width: 95%;
+    padding: 0px;
+}
+
+.formplaincard h2{
+    margin: 30px;
+   
+    font-size: 2.1rem;
+    font-weight: 600;
+    
+    color: #3c3c3c;
+}
+
+.formplaincard p{
+    
+    color: #3c3c3c;
+    margin-right: 50px;
+    text-align: justify ;
+    text-justify:inter-word;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
