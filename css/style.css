@@ -180,7 +180,7 @@ nav button {
 
 .bannerdsh img {
     border-radius: 20px;
-    box-shadow: 0 0 33px 0 rgba(23,24,61,.56);
+    box-shadow: 0 0 33px 0 rgba(23, 24, 61, .56);
     margin: 60px;
     margin: auto;
     float: right;
@@ -207,12 +207,8 @@ nav button {
 }
 
 
-.container2{
-    width: 100%;
-    height: 100vh;
-}
 
-.landing_announce{
+.landing_announce {
     width: 100%;
     height: 47px;
     margin: auto;
@@ -224,12 +220,12 @@ nav button {
 
 
 
-.landing_announce div{
+.landing_announce div {
     height: 47px;
 }
 
 
-.anndesmer{
+.anndesmer {
     color: #000;
     font-size: 1.6rem;
     font-weight: 400;
@@ -237,32 +233,78 @@ nav button {
     padding-left: 15px;
     padding-right: 24px;
     position: relative;
-    
+
 }
 
-.annlist{
+.annlist {
     list-style-type: disc;
     display: inline-block;
-    
+
 }
 
-.annlist li{
+.annlist li {
     display: inline-block;
     margin-inline-end: 100px;
 }
 
-/* 
-.bannerdesccount h1 {
-    font-size: 40px;
-    margin-right: 10px;
-    width: 100px;
-    border: 1px solid white;
-    height: 100px;
+.container2 {
+    background-color: #e8f3ff;
+    width: 100%;
+    height: fit-content;
 }
 
-.bannerdesccount div{
-    width: 3px;
-    border-radius: 5px;
-    height: 100px;
+.innercontainer {
+    width: 1349px;
+    margin: 100px auto;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 86px;
+
+}
+
+.gridcard {
+    border: 1px solid white;
     background-color: white;
-} */
+    border-radius: 10px;
+    padding: 20px;
+    height: 360px;
+}
+
+.gridcard:hover {
+    box-shadow: 0px 0px 20px 2px rgb(221 221 221);
+}
+
+.listlogodash {
+    margin-top: 65px;
+    margin-left: 123px;
+    max-width: 153px;
+    height: 120px;
+}
+
+.cardinner{
+
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+
+}
+
+.cardinner h4{
+    font-family: Cerebri Sans,sans-serif!important;
+    font: 400 15px/24px Roboto,Helvetica Neue,sans-serif;
+    letter-spacing: normal;
+    margin: 0 0 16px;   
+    color: #2d3079;
+    font-size: 2.1rem;
+    line-height: 21px;
+    font-weight: 700;
+    padding-bottom: 14px;
+    position: relative;
+    margin-bottom: 13px;
+    max-width: 75%;
+    width: 100%;
+
+
+}
