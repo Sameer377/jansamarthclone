@@ -1,55 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Title of the document</title>
     <style>
-       body {
+        .container {
+            background-color: antiquewhite;
+            width: 300px;
+            height: 350px;
+            border: 1px solid red;
+            margin: 50px;
+            display: flex;
+            position: relative;
+        }
 
-}
+        .card {
+            --all: 0px;
+    display: inline-block;
+    margin: 10px;
+    -webkit-mask:
+        linear-gradient(45deg, transparent 0 var(--bottom-left, var(--all)), #fff 0) bottom left,
+        linear-gradient(-45deg, transparent 0 var(--bottom-right, var(--all)), #fff 0) bottom right,
+        linear-gradient(135deg, transparent 0 var(--top-left, var(--all)), #fff 0) top left,
+        linear-gradient(-135deg, transparent 0 var(--top-right, var(--all)), #fff 0) top right;
+    -webkit-mask-size: 50.5% 50.5%;
+    -webkit-mask-repeat: no-repeat;
+    --top-right: 60px;
+            background-color: white;
+            border-radius: 10px;
+            width: 85%;
+            height: 85%;
+            border: 1px solid green;
+            z-index: 100;
+            position: absolute;
+            margin: 22px;
+        }
+
+       
+
+        .cardback{
+            width: 80%;
+            height: 80%;
+            margin: auto auto;
+            border: 1px solid blue;
+        }
+
+        .cardback:hover{
+            width: 100%;
+            height: 100%;
+        }
+
+        .card:hover {
+            background-color: aqua;
+            .cardback{
+                width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            }
+        }
+
     </style>
-    <title>Document</title>
 </head>
+
 <body>
-    <nav>
+    <div class="container">
+        <div class="card">
 
-        <button class="registerbtn">Register</button>
-        <button class="loginbtn" >Login</button>
-        <button class="navbtn">Grievances</button>
-        <button class="navbtn">FAQ's</button>
-        <button class="navbtn">Scheme</button>
-        <button class="navbtn">Home</button>    
-        hello
-        <div class="centerdiv" style="float: left; width: 100%; margin-left: 40px;">
-            <img class="navlogo" src="https://www.jansamarth.in/assets/images/website_images/newLending_img/jan-samarth-logo.svg" alt=""> 
         </div>
-          </nav>
+        <div class="cardback">
 
-    <div class="mainframe">
-        <div class="schememain">
-            <button class="backmain"> <- Back</button>
-            <h1>
-                Central Sector Interest Subsidy (CSIS)
-            </h1>
-            <h3>
-                Education loan | Ministry Loan
-            </h3>
-            <div style="background-color: yellow; height: 5px; width: 150px; border-radius: 5px;"></div>
         </div>
-
-
-        <div class="formarea">
-            <div class="formplaincard">
-                <h2>Introduction
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officia, sequi delectus vitae recusandae magni tempore aut, magnam dicta facilis repellat omnis, nostrum consequuntur reiciendis! Doloremque praesentium quidem natus exercitationem inventore provident veritatis culpa incidunt? Ex vero recusandae eveniet perspiciatis voluptatibus ipsa ducimus, cumque numquam ipsum esse adipisci aperiam. Sit praesentium repudiandae nulla blanditiis, delectus consequatur unde! Aspernatur repellat incidunt vel, quae quasi natus! Nesciunt veritatis animi quos sed corrupti ipsum accusantium eius ipsa laudantium, nobis praesentium libero dolorum commodi? Sunt architecto quibusdam ratione harum libero maiores, dolorum perspiciatis optio nihil, quos non. Provident perspiciatis doloribus eos eaque culpa accusamus.</p>
-            </div>
-        </div>
-
     </div>
-
-
 </body>
+
 </html>

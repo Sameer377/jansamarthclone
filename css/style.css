@@ -269,16 +269,35 @@ nav button {
 /* card inner */
 
 .gridcard {
-    border: 1px solid white;
+    /* copied */
+    --all: 0px;
+    display: inline-block;
+    margin: 10px;
+    -webkit-mask:
+        linear-gradient(45deg, transparent 0 var(--bottom-left, var(--all)), #fff 0) bottom left,
+        linear-gradient(-45deg, transparent 0 var(--bottom-right, var(--all)), #fff 0) bottom right,
+        linear-gradient(135deg, transparent 0 var(--top-left, var(--all)), #fff 0) top left,
+        linear-gradient(-135deg, transparent 0 var(--top-right, var(--all)), #fff 0) top right;
+    -webkit-mask-size: 50.5% 50.5%;
+    -webkit-mask-repeat: no-repeat;
+    --top-right: 80px;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    transition: 0.3s;
-    height: 360px;
+    transition: .3s;
+    height: fit-content;
+    min-height: 300px;
+    width: fit-content;
+    z-index: 9;
+    box-shadow: 0 24px 40px 15px rgba(34, 40, 46, 0.31);
 }
 
 .gridcard:hover {
-    box-shadow: 0px 0px 20px 2px rgb(221 221 221);
+    box-shadow: 0 24px 40px -15px rgba(34, 40, 46, 0.31);
+
+    .titlebr {
+        width: 50%;
+    }
 }
 
 .listlogodash {
@@ -289,7 +308,6 @@ nav button {
 }
 
 .cardinner {
-
     width: 100%;
     height: 100%;
 
@@ -300,7 +318,7 @@ nav button {
     letter-spacing: normal;
     margin: 0 0 16px;
     color: #2d3079;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 10px;
     font-weight: 700;
     margin-bottom: 13px;
@@ -308,12 +326,76 @@ nav button {
     width: 100%;
 }
 
-.cardcontentul{
-    font-family: Cerebri Sans,sans-serif;
+.cardcontentul {
+    display: block;
+    width: 90%;
+    font-size: 1rem;
+    line-height: 26px;
+    color: #4c5f74;
+    text-align: justify;    
+    font-weight: 500;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+
+.titlebr {
+    border-radius: 10px;
+    width: 25%;
+    height: 4px;
+    background-color: #FF9934;
+    transition: 0.2s;
+}
+
+.cardbbg {
+    border-radius: 10px;
+    width: 94.5%;
+    height: 50%;
+    margin: 11px;
+    background-color: #2d3079;
+}
+
+
+.schemelogo {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.schemeavailable{
     display: block;
     width: 100%;
     font-size: 1rem;
     line-height: 26px;
-    font-weight: bold   ;
+    font-weight: bold;
     color: #4c5f74;
+}
+
+.cardbtn{
+    margin-top: 20px;
+    border: 1px solid #2D3079;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 150px;
+    padding: 15px;
+    background-color: white;
+    color: #2D3079;
+    font-size: 14px;
+}
+
+.cardbtn:hover{
+    transition: 0.3s;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 150px;
+    padding: 15px;
+    background-color: #2D3079;
+    color: white;
+    font-size: 14px;
 }
