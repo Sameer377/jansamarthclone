@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(232, 243, 255);
+    padding-bottom: 60px;
 }
 
 nav {
@@ -192,7 +194,7 @@ nav button {
 .bannerdesccount {
     display: flex;
     flex-direction: row;
-    width: 496px;
+    width: 524px;
     height: 100px;
     align-items: start;
     margin-top: 80px;
@@ -251,7 +253,7 @@ nav button {
 .container2 {
     background-color: #e8f3ff;
     width: 100%;
-    height: fit-content;
+    height: 990px;
 }
 
 .innercontainer {
@@ -260,11 +262,15 @@ nav button {
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 86px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 46px;
 
 }
 
+.cardcontainer:hover{
+    filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+
+}
 
 /* card inner */
 
@@ -289,12 +295,10 @@ nav button {
     min-height: 300px;
     width: fit-content;
     z-index: 9;
-    box-shadow: 0 24px 40px 15px rgba(34, 40, 46, 0.31);
 }
 
 .gridcard:hover {
-    box-shadow: 0 24px 40px -15px rgba(34, 40, 46, 0.31);
-
+    
     .titlebr {
         width: 50%;
     }
@@ -373,7 +377,7 @@ nav button {
     font-size: 1rem;
     line-height: 26px;
     font-weight: bold;
-    color: #4c5f74;
+    color: #3a4a5b;
 }
 
 .cardbtn{
@@ -395,7 +399,16 @@ nav button {
     font-weight: bold;
     width: 150px;
     padding: 15px;
-    background-color: #2D3079;
+    background-color: #2d3079;
     color: white;
     font-size: 14px;
+    cursor: pointer;
+}
+
+.morescheme{
+    width: 1280px;  
+    background-color: white;
+    border-radius: 10px;
+    height: fit-content;
+    margin: auto auto;
 }
