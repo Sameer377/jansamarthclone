@@ -449,8 +449,27 @@ nav button {
 
 .intitiativecard h3{
     color: #4c5f74;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.8em;
     font-weight: 500;
     margin: 0;
-    padding-bottom: 30px 28px 6px;
+    padding: 30px 28px 6px;
+}
+
+.intitiativecard ul{
+    list-style-type: none;
+    width: 100%;
+    border-top: 1px solid #e2e2e2;
+}
+
+.intitiativecard ul li{
+    
+}
+
+.intitiativecard ul li em{
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    top: 25px;
 }
